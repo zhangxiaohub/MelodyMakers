@@ -27,6 +27,8 @@
             <div class="card">
                 <h2>🎵 歌曲标题</h2>
                 <input type="text" placeholder="请输入歌曲标题...">
+                <button class="generate-btn">确定</button>
+                <div id="Yes"></div>   
             </div>
 
             <!-- 示例歌曲展示 -->
@@ -45,12 +47,12 @@
                 <button class="generate-btn">刷新推荐</button>
             </div>
 
-            <!-- 歌词输入区 -->
+            <!-- 歌词输入区 
             <div class="card glow-border">
                 <h2>📝 歌词创作</h2>
                 <textarea rows="6" placeholder="输入你的歌词或歌曲描述..."></textarea>
                 <button class="generate-btn">AI生成歌词</button>
-            </div>
+            </div>-->
 
             <!-- 封面生成 -->
             <div class="card">
@@ -86,6 +88,8 @@
             <!-- 伴奏生成 -->
             <div class="card">
                 <h2>🎧 智能旋律生成</h2>
+                <h3>描述你想要的旋律风格:</h3>
+                <p>（如：轻快、忧伤、激昂等！！！！这里改了！！！要输入的多一些，标准一些，比如旋律风格+分贝值等等等，回头找一个统一的prompt）</p>
                 <textarea rows="3" placeholder="描述你想要的旋律风格..."></textarea>
                 <button class="generate-btn">生成智能旋律</button>
             </div>
@@ -94,7 +98,7 @@
         <!-- 右侧歌词区域 -->
         <div class="right-column">
             <div class="card lyrics-sidebar">
-                <h2>📜 实时歌词</h2>
+                <h2>📜 实时歌词！！！！这里也可以改了！！！因为咱们最后没有歌曲了！所以这里可以改成展示界面，比如展示封面图，展示最后生成的旋律音频</h2>
                 <div class="lyrics-content">
                     [Verse 1]
                     咖啡杯沿滤纸表面生成的指纹
@@ -106,7 +110,8 @@
                     在时差指数里可显示恒温
                     基于泡沫中的浮动隔音
                 </div>
-                <button class="generate-btn">导出歌词</button>
+                <button class="generate-btn">导出封面图</button>
+                <button class="generate-btn">导出旋律音频</button>
             </div>
         </div>
     </div>
