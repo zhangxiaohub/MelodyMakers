@@ -1,0 +1,141 @@
+/* 修改后的标题样式 */
+.platform-title {
+    margin: 20px 0 40px 30px; /* 增加上下边距 */
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-pink);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+    position: relative; /* 改为相对定位 */
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+/* 主容器新增顶部内边距 */
+.main-container {
+    padding: 120px 20px 80px; /* 顶部留出标题空间 */
+}
+
+:root {
+    --primary-black: #0a0a0a;
+    --primary-pink: #FF69B4;
+    --accent-pink: #FF1493;
+    --text-light: #f0f0f0;
+    --nav-bg: rgba(10, 10, 10, 0.95);  /*********新加的**********/
+}
+
+body {
+    margin: 0;
+    background: var(--primary-black);
+    color: var(--text-light);
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 主内容容器 */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* 功能卡片通用样式 */
+.card {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid var(--primary-pink);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 30px 0;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+}
+
+/* 右侧歌词固定区域 */
+.lyrics-sidebar {
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+/* 生成按钮样式 */
+.generate-btn {
+    background: linear-gradient(135deg, var(--primary-pink), var(--accent-pink));
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* 输入区域样式 */
+.input-group {
+    margin: 20px 0;
+    position: relative;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    background: #151515;
+    border: 1px solid var(--primary-pink);
+    border-radius: 6px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* 动态渐变边框 */
+@keyframes glow {
+    0% { border-color: var(--primary-pink); }
+    50% { border-color: var(--accent-pink); }
+    100% { border-color: var(--primary-pink); }
+}
+
+.glow-border {
+    animation: glow 2s infinite;
+}
+
+/* 导航栏样式 */
+nav {
+    background: var(--nav-bg);
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-avatar:hover {
+    transform: scale(1.1);
+}
+
+/* 导航链接通用样式 */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,105,180,0.2);
+}
