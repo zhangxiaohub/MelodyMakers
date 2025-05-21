@@ -139,3 +139,14 @@ nav a {
 nav a:hover {
     background: rgba(255,105,180,0.2);
 }
+
+#cover-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cover-preview img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}

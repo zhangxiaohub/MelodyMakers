@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MelodyMakers - 智能音乐创作平台</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <!-- 这是 HTML 注释 -->
 <body>
@@ -55,14 +55,14 @@
             </div>-->
 
             <!-- 封面生成 -->
-            <div class="card">
+           <div class="card">
                 <h2>🎨 封面生成</h2>
                 <div class="input-group">
-                    <input type="text" placeholder="请描述你的旋律封面设计...">
-                    <button class="generate-btn">生成封面</button>     
-                    <div id="coverPreview"></div>       
+                    <input id="cover-description" type="text" placeholder="请描述你的旋律封面设计...">
+                    <button id="generate-cover-btn" class="generate-btn">生成封面</button>
                 </div>
-            </div>
+                <div id="cover-preview"></div> <!-- 用于显示生成的封面图片 -->
+          </div>
 
             <!-- 旋律生成 -->
             <div class="card">
@@ -115,6 +115,6 @@
             </div>
         </div>
     </div>
-    <script src="../static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
 </body>
 </html>
